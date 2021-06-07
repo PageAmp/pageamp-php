@@ -1,0 +1,27 @@
+--js docroot/.ub1/client/ub1.js
+--class-path src
+--class-path ../ub1-core/src
+--class-path ../feffects
+--main ub1.PhpClient
+--define client
+--define HTML_EXTENSIONS
+--define feffects
+--library hscript
+--define hscriptPos
+--macro patchTypes('../ub1-core/src/ub1/hscript/interpTypePatch')
+--debug
+--dce std
+
+--next
+
+--php docroot/.ub1/php
+--class-path src
+--class-path ../ub1-core/src
+--main ub1.PhpServer
+--define HTML_EXTENSIONS
+--library hscript
+--define hscriptPos
+--macro patchTypes('../ub1-core/src/ub1/hscript/interpTypePatch')
+
+--cmd cp res/docroot/.htaccess docroot/
+--cmd cp res/docroot/.ub1.php docroot/
