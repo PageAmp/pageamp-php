@@ -11,7 +11,7 @@ AddOutputFilterByType DEFLATE text/html text/xml application/xml application/xht
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(\/)$ .ub1.php [L,QSA]
-RewriteRule ^([^\.]*)$ .ub1.php [L,QSA]
-RewriteRule ^(.*?\.htm)$ .ub1.php [L,QSA]
-RewriteRule ^(.*?\.html)$ .ub1.php [L,QSA]
+RewriteRule ^(\/)$ .pageamp.php [L,QSA]
+RewriteRule ^([^\.]*)$ .pageamp.php [L,QSA]
+RewriteRule ^(.*?\.htm)$ .pageamp.php [L,QSA]
+RewriteRule ^(.*?\.html)$ .pageamp.php [L,QSA]

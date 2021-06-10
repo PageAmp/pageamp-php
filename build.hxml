@@ -1,27 +1,27 @@
---js docroot/.ub1/client/ub1.js
+--js docroot/.pageamp/client/pageamp.js
 --class-path src
---class-path ../ub1-core/src
+--class-path ../pageamp/src
 --class-path ../feffects
---main ub1.PhpClient
+--main pageamp.PhpClient
 --define client
 --define HTML_EXTENSIONS
 --define feffects
 --library hscript
 --define hscriptPos
---macro patchTypes('../ub1-core/src/ub1/hscript/interpTypePatch')
+--macro patchTypes('../pageamp/src/pageamp/hscript/interpTypePatch')
 --debug
 --dce std
 
 --next
 
---php docroot/.ub1/php
+--php docroot/.pageamp/php
 --class-path src
---class-path ../ub1-core/src
---main ub1.PhpServer
+--class-path ../pageamp/src
+--main pageamp.PhpServer
 --define HTML_EXTENSIONS
 --library hscript
 --define hscriptPos
---macro patchTypes('../ub1-core/src/ub1/hscript/interpTypePatch')
+--macro patchTypes('../pageamp/src/pageamp/hscript/interpTypePatch')
 
 --cmd cp res/docroot/.htaccess docroot/
---cmd cp res/docroot/.ub1.php docroot/
+--cmd cp res/docroot/.pageamp.php docroot/

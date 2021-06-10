@@ -1,7 +1,7 @@
 <?php
-use \ub1\PhpServer;
+use \pageamp\PhpServer;
 
-set_include_path(get_include_path().PATH_SEPARATOR.__DIR__.'/.ub1/php/lib');
+set_include_path(get_include_path().PATH_SEPARATOR.__DIR__.'/.pageamp/php/lib');
 spl_autoload_register(
 	function($class){
 		$file = stream_resolve_include_path(str_replace('\\', '/', $class) .'.php');

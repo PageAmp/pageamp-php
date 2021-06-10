@@ -1,4 +1,4 @@
-package ub1;
+package pageamp;
 
 import php.Global;
 import php.Lib;
@@ -29,7 +29,7 @@ class PhpServer {
 			}
 		}
 		try {
-			var page = Ub1Server.load(root, uri, domain, true);
+			var page = Server.load(root, uri, domain, true);
 			Syntax.code("header('Content-type: text/html')");
 			Lib.print(page.doc.toString());
 		} catch (ex:Dynamic) {
