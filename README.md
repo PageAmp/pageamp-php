@@ -1,2 +1,2 @@
 # pageamp-php
-Isomorphic Reactive Web Framework for Node.js, Java and PHP.
+Isomorphic reactive web framework for Node.js, Java, PHP, and the browser.
