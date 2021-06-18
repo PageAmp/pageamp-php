@@ -2,7 +2,7 @@
 --class-path src
 --class-path ../pageamp/src
 --class-path ../feffects
---main pageamp.PhpClient
+--main pageamp.Client
 --define client
 --define HTML_EXTENSIONS
 --define feffects
